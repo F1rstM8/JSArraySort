@@ -161,5 +161,5 @@ const mediumBooksCount = books.filter(
 ).length;
 console.log("7. Книг від 200 до 400 сторінок:", mediumBooksCount);
 console.log("\n--- ЗАВДАННЯ 8 ---");
-const thinnestBook = books.slice().sort((a, b) => a.pages - b.pages)[0];
+const thinnestBook = books.toSorted((a, b) => a.pages - b.pages)[0];
 console.log("8. Найтонша книга:", thinnestBook);
